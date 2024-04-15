@@ -1,0 +1,23 @@
+<body>
+  <div class="container">
+    <h1>Movie Ticket Management</h1>
+    <div class="movies">
+      <h2>Current Movies</h2>
+      <ul class="movie-list">
+        <li *ngFor="let movie of movies" class="movie-item">
+          <img [src]="movie.imageUrl" [alt]="movie.title" class="movie-image" />
+          <div class="movie-details">
+            <span class="movie-title">{{ movie.title }}</span>
+            <span class="movie-info">{{ movie.genre }} | {{ movie.duration }}min | Rating: {{ movie.rating }}</span>
+            <div class="ticket-input">
+              <label [for]="'total-tickets-' + movie._id">Total Tickets:</label>
+              <input type="number" [id]="'total-tickets-' + movie._id" [(ngModel)]="movie.tickets" min="0">
+              <button (click)="updateTotalTickets(movie._id, movie.tickets)" class="ticket-button">Update Total Tickets</button>
+            </div>
+            <span class="ticket-count">Available Tickets: {{ movie.tickets }}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>

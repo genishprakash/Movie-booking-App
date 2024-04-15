@@ -1,0 +1,26 @@
+<body>
+    <div class="body">
+    <div class="container">
+        
+        <h2>Movie Ticket Booking</h2>
+        <form action="#" (submit)="bookTickets()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="seat">
+                <label for="seats">Enter number of seats</label>
+                <input type="number" id="seatNumber" name="seatNumber" min="1" max="10" [(ngModel)]="seatNumber" required><br>
+
+            </div>
+            <div class="form-group">
+                <button type="submit" >Book Tickets</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>

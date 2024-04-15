@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url('../../assets/WhatsApp\ Image\ 2024-02-07\ at\ 14.51.38.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    
+    padding: 20px;
+    background-color:rgba(255,255,255,0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .movies {
+    margin-top: 20px;
+    font-weight: bolder;
+  }
+  
+  .movie-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .movie-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .movie-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .movie-details {
+    flex-grow: 1;
+  }
+  
+  .movie-title {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .movie-info {
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  .ticket-buttons {
+    margin-top: 10px;
+  }
+  
+  .ticket-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .ticket-button:hover {
+    background-color:white;
+    color:blue;
+  }
+  
+  .ticket-count {
+    font-size: 0.9em;
+  }

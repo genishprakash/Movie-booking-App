@@ -1,0 +1,28 @@
+<body>
+  <div class="container">
+    <h1>User Dashboard</h1>
+    <div class="movies">
+      <h2>Current Movies</h2>
+      <ul class="movie-list">
+        <li *ngFor="let movie of movies" class="movie-item">
+          <img [src]="movie.imageUrl" [alt]="movie.title" class="movie-image" />
+          <div class="movie-details">
+            <span class="movie-title">{{ movie.title }}</span>
+            <span class="movie-info"
+              >{{ movie.genre }} | {{ movie.duration }}min | Rating:
+              {{ movie.rating }}</span
+            >
+            <div class="ticket-buttons">
+              <button class="ticket-button" (click)="bookTicket(movie._id)">
+                Book Now
+              </button>
+              <span class="ticket-count"
+                >Tickets Available: {{ movie.tickets }}</span
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>

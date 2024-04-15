@@ -1,0 +1,47 @@
+.landing-page{
+  background-image: url("../../assets/WhatsApp\ Image\ 2024-02-07\ at\ 14.51.38.jpeg");
+  background-size: cover; /* Ensure the background image covers the entire viewport */
+  background-position: center; /* Center the background image */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Set the body height to the full viewport height */
+  margin: 0; /* Remove default body margin */
+}
+html {
+  margin: 0;
+}
+h1 {
+  font-size: 50px;
+}
+.container {
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.buttons button {
+  background-color: #0056b3;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+#b1 {
+  transition: 0.5s;
+}
+
+#b1:hover {
+  background-color: white;
+  color: #0056b3;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bolder;
+}
